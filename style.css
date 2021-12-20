@@ -1,0 +1,146 @@
+body {margin: 0;}
+
+.width {width: 720px;}
+
+.background {
+    background: #657580;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30pt;}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    margin: 0;
+    padding: 20px 0;
+    word-break:break-all;}
+
+input {
+    height: 50px;
+    border-radius: 7px;
+    padding: 0 0px 0 20px;
+    border-color: #dcdcdb;
+    border-style: solid;
+    outline: none;}
+.input {
+    width: 100%;
+}
+.input-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;}
+.first-input {
+    width: 40%;
+}
+
+.input-line > .first-input > p,.input-line > .second-input > p  {
+    font-size: 12pt;
+    padding: 30px 0 10px 0;} 
+
+.total {
+    display: flex;
+    justify-content: right;
+    width: 100%;}
+
+.total > p {
+    text-align: right;}
+
+input::placeholder {
+    color: #dadada;}
+
+button {
+    background: #4b8569;
+    height: 55px;
+    width: 150px;
+    border-style: solid;
+    border-color: #4b8569;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight: 400;}
+.itogo {
+    padding-right: 10px;
+}
+.waste {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;}
+.inputReason {
+    width: 36.6%;
+}
+.inputMoney {
+    width: 23.4%;
+}
+.part1 {
+    display: flex;
+    flex-direction: row;
+    width: 43%;
+}
+.reason {
+    width: 40%;}
+
+.order {
+    width: 5%;
+}
+
+.date, .exp {width: 50%;}
+
+img {
+    width: 30px;
+    padding-left: 13px;}
+
+@media screen and (max-device-width: 1020px) {
+    .background {background: #e2f3ff;}
+    .input-line {flex-direction: column;}
+    h1 {
+        text-align: left;}
+    .width {
+        width: 400px;}
+    .first-input, .second-input {
+        width: 100%;
+    }
+    button {
+        background: #79caab;
+        height: 35px;
+        width: 150px;
+        border-style: solid;
+        border-color: #79caab;
+        border-radius: 7px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12pt;
+        font-weight: 400;
+        margin-top: 20px;}
+    .input {width: 95%;}
+    .waste {
+        width: 100%;
+        justify-content: flex-end;
+    padding-bottom: 40px;}
+    .order {width: 10%;}
+    .reason {width: 60%;}
+    .part1 {
+        flex-direction: column;
+        width: 30%;
+    }
+    .date, .exp {
+        width: 100%;
+        padding: 0;
+    }
+    .inputReason {
+        width: 84%;
+    }
+    .inputMoney {
+        width: 33%;
+    }
+}

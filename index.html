@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expanses list</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="background">
+            <div class="width">
+                <h1>Учёт моих расходов</h1>
+                <div class="input-line">
+                    <div class="first-input">
+                        <p>Куда было потрачено:</p>
+                        <input type="text" placeholder="Куда было потрачено" id="where-input" class="input">
+                    </div>
+                    <div class="second-input">
+                        <p>Сколько было потрачено:</p>
+                        <input type="number" placeholder="Сколько было потрачено" id="how-much-input" class="input">
+                    </div>
+                    <button id="add-button" onclick="onClickButton()">Добавить</button>
+                </div>
+                <div class="total-de-flex">
+                    <div class="total" id="sum">
+                        <p class="itogo">Итого: </p>
+                        <p id="result"></p>
+                </div>
+                </div>
+                <div class="expanses" id="expanses"></div>
+            </div>
+        </div>
+    </body>
+</html>
