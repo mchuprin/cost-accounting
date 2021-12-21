@@ -4,7 +4,7 @@ const { Scheme } = mongoose;
 
 const expScheme = new mongoose.Schema({
     reason : String,
-    date: String,
+    date: Date,
     exp: Number
 });
 
